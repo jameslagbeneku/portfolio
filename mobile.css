@@ -62,6 +62,10 @@
 
 @media screen and (max-width: 1056px) {
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     .header-box {
         /* padding: 1rem; */
     }
@@ -125,6 +129,9 @@
 }
 
 @media screen and (max-width: 360px) {
+    html {
+        scroll-behavior: smooth;
+    }
     .hero-text {
         transform: scale(0.7)
     }
