@@ -22,6 +22,7 @@ mobileCloseBtn.addEventListener('click', () => {
     container.style.transition = 'all 0.3s ease-in';
     mobileNav.style.transform = 'translateX(100%)';
     body.style.overflowY = 'auto'  
+    mobileNav.style.display = 'none'
     toTopBtn.style.display = 'flex' 
 })
 
