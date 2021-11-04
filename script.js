@@ -9,6 +9,7 @@ openNav.addEventListener('click', () => {
 closeNav.addEventListener('click', () => {
     mobileNav.style.right = '-100%'
     mobileNav.style.display = 'none'
+    mobileNav.style.overflow = 'hidden'
 })
 
 // if (mobileNav.style.right = '-100%') {
