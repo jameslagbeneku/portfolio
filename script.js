@@ -1,37 +1,12 @@
-const mobileNav = document.querySelector('.mobile-nav-links')
-const container = document.querySelector('.container')
-const hamburgerBtn = document.querySelector('.hamburger-menu i')
-const mobileCloseBtn = document.querySelector('.mobile-close-menu i')
-const toTopBtn = document.querySelector('.to-top-btn')
-const body = document.querySelector('body')
-const mobileNavLinks = document.querySelectorAll('.mobile-nav-links ul li')
+const openNav = document.querySelector('.fa-bars')
+const mobileNav = document.querySelector('.mobile-nav')
+const closeNav = document.querySelector('.fa-times')
 
-console.log(mobileNavLinks)
+openNav.addEventListener('click', () => mobileNav.style.right = '0')
+closeNav.addEventListener('click', () => mobileNav.style.right = '-100%')
 
-hamburgerBtn.addEventListener('click', () => {
-    container.style.transform = 'translateX(-100%)';
-    container.style.transition = 'all 0.3s ease-in';
-    mobileNav.style.display = 'block';
-    mobileNav.style.transform = 'translateX(100%)';
-    body.style.overflow = 'hidden'
-    toTopBtn.style.display = 'none'
-})
-
-mobileCloseBtn.addEventListener('click', () => {
-    container.style.transform = 'translateX(0%)';
-    container.style.transition = 'all 0.3s ease-in';
-    mobileNav.style.transform = 'translateX(100%)';
-    body.style.overflowY = 'auto'  
-    mobileNav.style.display = 'none'
-    toTopBtn.style.display = 'flex' 
-})
-
-mobileNavLinks.forEach(element => element.addEventListener('click', () => {
-    container.style.transform = 'translateX(0%)';
-    container.style.transition = 'all 0.3s ease-in';
-    mobileNav.style.transform = 'translateX(100%)';
-    mobileNav.style.display = 'none'
-    body.style.overflowY = 'auto'  
-    toTopBtn.style.display = 'flex'
-}));
-
+if (mobileNav.style.right = '-100%') {
+    mobileNav.style.dislay = 'none'
+} else {
+    mobileNav.style.dislay = 'block'
+}
