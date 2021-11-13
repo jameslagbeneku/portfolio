@@ -3,169 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
+    <link rel="shortcut icon" href="img/jl-bg-neon-turquoise.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="min-style.css"> -->
-    <title>SupremeHVAC</title>
+    <link rel="stylesheet" href="mobile.css">
+    <title>JAMES LAGBENEKU</title>
 </head>
 <body>
+
+    <a href="#header-box" class="to-top-btn"><i class="fas fa-arrow-up"></i></a>
+
     <div class="container">
-        <div class="banner">
-            <!-- MOBILE NAV -->
-            <div class="mobile-nav">
-                <div class="top">
-                    <i class="fa fa-times"></i>
-                </div>
-                <div class="mobile-nav-links">
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#team">Team</a></li>
-                        <li><a href="#contact">contact</a></li>
-                    </ul>
-                </div>
-
+        <div class="mobile-nav-links">
+            <div class="mobile-close-menu">
+                <i class="fas fa-times"></i>
             </div>
-
-            <!-- DESKTOP NAV -->
-            <div class="header">
-                <nav>
-                    <div class="logo">
-                        <h3 class="logo"><a href="index.html">SupremeHVAC</a></h3></div>
-                </nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        
+        <section class="header-box" id="header-box">
+            <nav class="nav-bar">
+                <div class="logo">
+                    <a href="index.html"><img src="img/jl-bg-neon-turquoise.png" alt="jl-logo"></a>
+                </div>
 
                 <div class="nav-links">
                     <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#team">Team</a></li>
-                        <li><a href="#contact">contact</a></li>
-                        <i class="fa fa-bars"></i>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
+
+                    <div class="hamburger-menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="hero-box">
+               <div class="hero-text">
+                    <h1 class="intro-text">
+                        Hi! <br> My Name Is JAMES LAGBENEKU. <br> I Am A Frontend Developer. 
+                    </h1>
+                    <div class="cta-btns">
+                        <a href="#projects" class="portfolio-btn"><i class="far fa-eye"></i>View My Works<i class="fas fa-chevron-right"></i></a>
+                        <a href="https://github.com/jameslagbeneku" target="_blank" class="github-btn"><i class="fab fa-github"></i>View My GitHub<i class="fas fa-chevron-right"></i></a>
+                    </div>
+               </div>
+                    <div class="side-links">
+                        <a class="linkedin-icon" href=""><img src="img/linkedin.svg" alt=""></a>
+                        <a class="github-icon" href=""><img src="img/github-sign.svg" alt=""></a>
+                        <a class="email-icon" href=""><img src="img/gmail.svg" alt=""></i></a>
+                    </div>
+            </div>
+
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-header">
+                <h1>About Me</h1>
+            </div>
+            <div class="about-main">
+                <div class="about-img">
+                    <img src="img/jl-about-3.jpg" alt="">
+                </div>
+                <div class="about-text">
+                    <p>I am a self-taught frontend developer with general interest and capabilities in designing and building user interfaces and functionalities for websites and web applications with modern frontend skills and best practices. <br> <br> I am also interested in learning server-side languages and databases with the hope of becoming a Fullstack Developer in the near future.</p>
+
+                    <a class="about-cta" href="#contact">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="projects-header">
+                <h1>My Projects</h1>
+            </div>
+
+            <div class="projects-main">
+                <div class="project-card">
+                    <img src="img/nkeke.jpg" alt="">
+                    <h3>Nkeke Weather App</h3>
+                    <div class="card-btns">
+                        <a href="https://nkekeweather.netlify.app/" target="_blank" class="demo-btn"><i class="far fa-eye"></i>Live Demo<i class="fas fa-chevron-right"></i></a>
+                        <a href="https://github.com/jameslagbeneku/nkeke-weather-app" target="_blank" class="code-btn"><i class="fab fa-github"></i>GitHub<i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="img/easybank.jpg" alt="">
+                    <h3>Easybank Landing Page</h3>
+                    <div class="card-btns">
+                        <a href="https://jamieasybank.netlify.app/" target="_blank"class="demo-btn"><i class="far fa-eye"></i>Live Demo<i class="fas fa-chevron-right"></i></a>
+                        <a href="https://github.com/jameslagbeneku" target="_blank" class="code-btn"><i class="fab fa-github"></i>GitHub<i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="img/hvac1.jpg" alt="">
+                    <h3>JamieHVAC LLC</h3>
+                    <div class="card-btns">
+                        <a href="https://jamiehvac.netlify.app/" target="_blank" class="demo-btn"><i class="far fa-eye"></i>Live Demo<i class="fas fa-chevron-right"></i></a>
+                        <a href="https://github.com/jameslagbeneku/jamiehvac" target="_blank" class="code-btn"><i class="fab fa-github"></i>GitHub<i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="img/hvac1.jpg" alt="">
+                    <h3>JamieHVAC LLC</h3>
+                    <div class="card-btns">
+                        <a href="https://jamiehvac.netlify.app/" target="_blank" class="demo-btn"><i class="far fa-eye"></i>Live Demo<i class="fas fa-chevron-right"></i></a>
+                        <a href="https://github.com/jameslagbeneku/jamiehvac" target="_blank" class="code-btn"><i class="fab fa-github"></i>GitHub<i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+        <footer class="contact" id="contact">
+            <div class="contact-header">
+                <h1>Contact</h1>
+            </div>
+            <div class="contact-main">
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xeqvgnrk"
+                    method="POST" id="contact-us">
+                        <div class="full-name">
+                            <label for="full-name">Full Name:</label>
+                            <input type="text" id="full-name" name="full-name" placeholder="Full Name">
+                            
+                        </div>
+                        <div class="email">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter Email...">
+                        </div>
+                        <div class="message-area">
+                            <textarea name="message" id="contact-us" cols="" rows="" placeholder="Message..."></textarea>
+                        </div>
+                        <button type="submit">SEND</button>
+                    </form>
+                </div>
+                <div class="social" >
+                    <div class="icons">
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-github-square"></i></a>
+                        <a href=""><i class="fas fa-envelope-square"></i></a>
+                    </div>
+                    <div class="reserved">
+                        <p class="copyright">All Rights Reserved. James Lagbeneku &copy; <span class="year">2021</span></p>
+                    </div>
                     
                 </div>
-                
-                
             </div>
-            <!-- BANNER TEXT -->
-            <div class="text">
-                <h3>welcome to supremehvac llc.</h3>
-                <p class="msg">We are a family owned business spanning three (3) generations with a huge bucket of experience in providing plumbing, heating, ventilation and air conditioning services for homes and businesses.
-                    <p class="btn"><a href="#services">read more</a></p>
-                </p>
-
-                
-            </div>  
-        </div>
-
-        <!-- SERVICES -->
-
-        <div class="our-services">
-            <h3 id="services">our services</h3>
-        </div>
-        <section  class="services">
-            
-            <div class="sales">
-                <i class="fas fa-shopping-cart"></i>
-                <p class="msg">We sell the best of heating, ventilation and air conditioning systems for homes and businesses
-                    <p class="btn">read more...</p>
-                </p>
-                
-            </div>
-            <div class="installation">
-                <i class="fas fa-cogs"></i>
-                <p class="msg">We provide world class installation of heating, ventilation and air conditioning systems for homes and businesses
-                    <p class="btn">read more...</p>
-                </p>
-                
-            </div>
-            <div class="maintenance">
-                <i class="fas fa-tools"></i>
-                <p class="msg">We provide the best of maintenance heating, ventilation and air conditioning systems for homes and businesses
-                    <p class="btn">read more...</p>
-                </p>
-            </div>
-        </section>
-
-        <!-- TEAM MEMBERS -->
-
-        <div class="team-heading">
-            <h3 id="team">meet our team</h3>
-        </div>
-        
-        <section  class="team">
-            
-            <div id="john-doe" class="member">
-                <div class="headshot"></div>
-                <h3>John Doe</h3>
-                <p>Managing Director</p>
-                <i class="fas fa-phone-alt"><a href="tel:5554280940"> 555-428-0940</a> ext 203
-                </i><br>
-                <i class="far fa-envelope"><a href="mailto:johndoe@supremehvac.com">johndoe@supremehvac.com</a></i>
-            </div>
-
-            <div id="alan-smith" class="member">
-                <div class="headshot"></div>
-                <h3>Alan Smith</h3>
-                <p>Head of Projects</p>
-                <i class="fas fa-phone-alt"><a href="tel:5554280940"> 555-428-0940</a> ext 205
-                </i><br>
-                <i class="far fa-envelope"><a href="mailto:alansmith@supremehvac.com">alansmith@supremehvac.com</a></i>
-            </div>
-
-            <div id="andrea-hill" class="member">
-                <div class="headshot"></div>
-                <h3>Andrea Hill</h3>
-                <p>Head of Marketing</p>
-                <i class="fas fa-phone-alt"><a href="tel:5554280940"> 555-428-0940</a> ext 207
-                </i><br>
-                <i class="far fa-envelope"><a href="mailto:andreahill@supremehvac.com">andreahill@supremehvac.com</a></i>
-            </div>
-
-            <div id="sandra-brown" class="member">
-                <div class="headshot"></div>
-                <h3>Sandra Brown</h3>
-                <p>Accountant</p>
-                <i class="fas fa-phone-alt"><a href="tel:5554280940"> 555-428-0940</a> ext 209
-                </i><br>
-                <i class="far fa-envelope"><a href="mailto:sandrabrown@supremehvac.com">sandrabrown@supremehvac.com</a></i>
-            </div>
-        </section>
-
-        <!-- FOOTER -->
-
-        <footer id="contact">
-            <div class="sub">
-                <p class="cta">subscribe to our monthly newsletter</p>
-            <form action="">
-                <input type="email" name="" id="" placeholder="  Enter Your Email..."><button class="big-btn" type="submit"><i class="fas fa-chevron-right"></i></button>
-            </form>
-
-            
-            </div>
-
-            <div class="contact">
-                <p class="address"><i class="fas fa-map-marked-alt"></i> 111 5th Avenue 2nd Floor <br>
-                New York, NY 10011 </p>
-                <p class="phone-number">
-                    <i class="fas fa-phone-alt"><a href="tel:5554280940"> 555-428-0940</a>
-                    </i>
-                </p>
-                
-                <div class="social">
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-twitter-square"></i>
-                    <i class="fab fa-instagram-square"></i>
-                    <i class="fab fa-youtube-square"></i>
-                </div>
-
-                <p class="cprt">all rights reserved. SupremeHVAC LLC. Made with ❤️ by James Lagbeneku &copy; 2021</p>
-
-            </div>
-            
         </footer>
+
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
